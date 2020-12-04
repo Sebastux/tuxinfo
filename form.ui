@@ -1,0 +1,1401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mw_tuxinfo</class>
+ <widget class="QMainWindow" name="mw_tuxinfo">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>436</width>
+    <height>542</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>436</width>
+    <height>542</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>436</width>
+    <height>542</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>tuxinfos V 1.0.0</string>
+  </property>
+  <widget class="QWidget" name="cw_tuxinfos">
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <widget class="QTabWidget" name="tab_infos">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>441</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Triangular</enum>
+    </property>
+    <property name="currentIndex">
+     <number>4</number>
+    </property>
+    <widget class="QWidget" name="tab_machine">
+     <property name="minimumSize">
+      <size>
+       <width>427</width>
+       <height>470</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>427</width>
+       <height>470</height>
+      </size>
+     </property>
+     <attribute name="title">
+      <string>Machine</string>
+     </attribute>
+     <widget class="QLabel" name="lbl_typeprocesseur">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>12</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Type de processeur :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_architecture">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>42</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Architecture : </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt__typeprocesseur">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>10</y>
+        <width>260</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_architecture">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>40</y>
+        <width>260</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_coeursphys">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>72</y>
+        <width>121</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Coeurs physique :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_coeurstotal">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>102</y>
+        <width>111</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Coeurs total : </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_freqmaxi">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>132</y>
+        <width>121</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fréquence maxi :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_freqmini">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>162</y>
+        <width>121</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fréquence mini :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_lfreqencours">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>192</y>
+        <width>141</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fréquence en cours :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_coeursphys">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>70</y>
+        <width>260</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_coeurstotal">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>100</y>
+        <width>260</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_freqmaxi">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>130</y>
+        <width>200</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_freqmini">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>160</y>
+        <width>200</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_freqencours">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>190</y>
+        <width>200</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_utilcpu">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>222</y>
+        <width>131</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Utilisation CPU :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_tailleram">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>252</y>
+        <width>121</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Taille de la RAM :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_tailleram">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>250</y>
+        <width>200</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_ramdispo">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>282</y>
+        <width>121</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RAM disponnible :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_ramdispo">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>280</y>
+        <width>200</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_ramutilisee">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>312</y>
+        <width>91</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RAM utilisée :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_pourcentageproce">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>342</y>
+        <width>111</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Utilisation RAM :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_ramutilisee">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>310</y>
+        <width>200</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>132</y>
+        <width>31</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mhz</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>162</y>
+        <width>31</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mhz</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>192</y>
+        <width>31</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mhz</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>260</y>
+        <width>31</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Go</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>282</y>
+        <width>21</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Go</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>312</y>
+        <width>31</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Go</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="pb_pourcentageram">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>340</y>
+        <width>260</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="format">
+       <string>%p%</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="pb_utilcpu">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>220</y>
+        <width>260</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_systeme">
+     <attribute name="title">
+      <string>Système</string>
+     </attribute>
+     <widget class="QLabel" name="lbl_nomos">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>12</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nom de l'OS :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_versionmajeur">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>42</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Version majeur de l'OS :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_nomos">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>10</y>
+        <width>251</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_versionmajeur">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>40</y>
+        <width>251</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_versionmineur">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>72</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Version mineure de l'OS :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_versionmineur">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>70</y>
+        <width>251</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_editionos">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>132</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Edition de l'OS :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_editionos">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>130</y>
+        <width>251</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_architectureos">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>162</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Architecture de l'OS : </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_architectureos">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>160</y>
+        <width>251</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_buildos">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>102</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Build de l'OS : </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_buildos">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>100</y>
+        <width>251</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_nomdomaine">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>222</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nom de domaine : </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_fqdn">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>250</y>
+        <width>251</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_login">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>282</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Login utilisateur :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_fqdn">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>252</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>FQDN : </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_nomdomaine">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>220</y>
+        <width>251</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_nommachine">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>192</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nom de la machine : </string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_login">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>280</y>
+        <width>251</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_nommachine">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>190</y>
+        <width>251</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_reseau">
+     <attribute name="title">
+      <string>Réseau</string>
+     </attribute>
+     <widget class="QGroupBox" name="gb_ipv4">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>0</y>
+        <width>431</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>IP V4</string>
+      </property>
+      <widget class="QLabel" name="lbl_adresseipv4">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>32</y>
+         <width>91</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Adresse IP :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_masquev4">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>62</y>
+         <width>171</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Masque de sous-réseau :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_dnsv4">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>92</y>
+         <width>62</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>DNS :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="edt_adresseipv4">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>30</y>
+         <width>240</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="edt_masquev4">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>60</y>
+         <width>240</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="edt_dnsv4">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>90</y>
+         <width>240</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Inconnue</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_broadcastv4">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>122</y>
+         <width>91</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Broadcast :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="edt_broadcastv4">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>120</y>
+         <width>240</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="gb_ipv6">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>160</y>
+        <width>431</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>IP V6</string>
+      </property>
+      <widget class="QLabel" name="lbl_adresseipv6">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>32</y>
+         <width>81</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Adresse IP :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_masquev6">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>62</y>
+         <width>171</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Masque de sous-réseau :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_dnsv6">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>92</y>
+         <width>62</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>DNS :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="edt_adresseipv6">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>30</y>
+         <width>241</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="edt_masquev6">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>60</y>
+         <width>241</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="edt_dnsv6">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>90</y>
+         <width>241</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Inconnue</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_broadcastv6">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>122</y>
+         <width>131</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Broadcast :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="edt_broadcastv6">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>120</y>
+         <width>241</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>330</y>
+        <width>431</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Divers</string>
+      </property>
+      <widget class="QLabel" name="lbl_macaddr">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>60</y>
+         <width>121</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Addresse(s) MAC :</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="ptedt_macaddresse">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>30</y>
+         <width>241</width>
+         <height>90</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_gpu">
+     <attribute name="title">
+      <string>GPU</string>
+     </attribute>
+     <widget class="QLabel" name="lbl_nomgpu">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>12</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nom du GPU :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_idgpu">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>42</y>
+        <width>91</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ID du GPU :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_memutilisee">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>162</y>
+        <width>121</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mémoire utilisée :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_chargegpu">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>102</y>
+        <width>111</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Charge du GPU :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_uuidgpu">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>72</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>UUID du GPU :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_tempgpu">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>222</y>
+        <width>151</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Température du GPU :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_taillemem">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>132</y>
+        <width>111</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Taille mémoire :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_memlibre">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>192</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mémoire libre :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_nomgpu">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>10</y>
+        <width>250</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_tempgpu">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>220</y>
+        <width>200</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_uuidgpu">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>70</y>
+        <width>250</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_taillemem">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>130</y>
+        <width>200</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_memutilisee">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>200</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_idgpu">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>40</y>
+        <width>250</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edt_memlibre">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>190</y>
+        <width>200</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="pb_chargegpu">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>100</y>
+        <width>250</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>132</y>
+        <width>31</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>MB</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>162</y>
+        <width>31</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>MB</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>192</y>
+        <width>31</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>MB</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>222</y>
+        <width>31</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>°C</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_about">
+     <attribute name="title">
+      <string>About</string>
+     </attribute>
+     <widget class="QPlainTextEdit" name="ptedt_about">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>431</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>ForbiddenCursor</cursorShape>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="plainText">
+       <string>Tuxinfo version : 1.0.0
+Version de python : 3.9
+Version de Qt : 5.15.1
+
+Attention : L'onglet GPU nécessite une carte NVIDIA ainsi que l'installation de la dernière version disponible des drivers.</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btn_OK">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>510</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Fermer la fenêtre.</string>
+    </property>
+    <property name="text">
+     <string extracomment="Fermer la fenêtre">Quitter</string>
+    </property>
+    <property name="shortcut">
+     <string>Q</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_scan">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>510</y>
+      <width>83</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Mettre à jour la fenêtre avec les données en cours&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Mise à jour</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>tab_infos</tabstop>
+  <tabstop>edt_nomos</tabstop>
+  <tabstop>edt_versionmajeur</tabstop>
+  <tabstop>edt_versionmineur</tabstop>
+  <tabstop>ptedt_about</tabstop>
+  <tabstop>btn_OK</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
